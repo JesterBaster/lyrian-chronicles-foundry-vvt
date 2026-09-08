@@ -133,6 +133,7 @@
   "LYRIAN.DamageGroup.magic": "Magic",
   "LYRIAN.DamageGroup.divine": "Divine",
   "LYRIAN.DamageGroup.astra": "Astra",
+  "LYRIAN.DamageGroup.other": "Other",
   "LYRIAN.UI.DamageTypeFor": "Damage type for {name}",
   "LYRIAN.Damage.Physical": "Physical",
   "LYRIAN.Damage.Slashing": "Physical (Slashing)",

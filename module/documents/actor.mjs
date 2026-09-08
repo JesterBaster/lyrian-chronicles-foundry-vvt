@@ -1053,7 +1053,10 @@ export class LyrianActor extends Actor {
     if (!profile) {
       return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NoAttackProfile", {
         name: this.name,
-        attack: game.i18n.localize(`LYRIAN.Attack.${attackType}`)
+        // The catalog keys are capitalised (LYRIAN.Attack.Light), so building
+        // one from the lower-case attackType printed the raw key back at the
+        // GM. Read the label the config already carries, as everywhere else.
+        attack: game.i18n.localize(LYRIAN.attackTypes[attackType].label)
       }));
     }
 
