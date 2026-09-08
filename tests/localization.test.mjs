@@ -103,3 +103,79 @@ test("notifications and dialog titles do not use literal English strings", () =>
   }
   assert.deepEqual(offenders, []);
 });
+
+/**
+ * Keys assembled at runtime escape the literal scan above: nothing reads
+ * `LYRIAN.Attack.${attackType}` as a key, so a family that never grew the
+ * entry its code asks for stays missing until a GM sees the raw key in a
+ * notification. Each family below derives its value set from the module that
+ * produces it, so adding a new refusal reason or damage group without its
+ * catalog entry fails here rather than in play.
+ */
+test("every localization key built at runtime resolves to a catalog entry", async () => {
+  const { LYRIAN } = await import("../module/config.mjs");
+  const { CRAFT_ACTIONS } = await import("../module/rules/crafting-session.mjs");
+  const { CUSTOM_OUTPUT_TYPES } = await import("../module/rules/crafting.mjs");
+
+  const read = (file) => fs.readFileSync(path.join(ROOT, file), "utf8");
+  const literals = (file, pattern) =>
+    [...new Set([...read(file).matchAll(pattern)].map((match) => match[1]).filter(Boolean))];
+
+  const session = "module/rules/crafting-session.mjs";
+  const choiceTitles = read("module/rules/proficiencies.mjs")
+    .match(/const CHOICE_TITLES = Object\.freeze\(\{[\s\S]*?\n\}\);/)?.[0];
+  assert.ok(choiceTitles, "could not locate CHOICE_TITLES to derive its keys");
+
+  const families = {
+    // module/rules/damage-types.mjs groups each type, falling back to "other".
+    "LYRIAN.DamageGroup.": [
+      ...new Set(Object.values(LYRIAN.damageTypes).map((entry) => entry.group)),
+      "other"
+    ],
+    // module/sheets/actor-sheet.mjs and module/documents/actor.mjs.
+    "LYRIAN.Craft.Action.": Object.keys(CRAFT_ACTIONS),
+    "LYRIAN.Craft.Refused.": literals(session, /\breason:\s*"([a-z]+)"/g),
+    "LYRIAN.Craft.ModRefused.": literals(session, /\brefused:\s*"([a-z]+)"/g),
+    "LYRIAN.Craft.OutputType.": CUSTOM_OUTPUT_TYPES,
+    // module/rules/equipment-import.mjs names the section a drop landed in.
+    "LYRIAN.Inventory.Section.": literals(
+      "module/rules/equipment-import.mjs", /\btype:\s*"([a-z]+)"/g
+    ),
+    // module/rules/proficiencies.mjs canonicalises to one of these kinds.
+    "LYRIAN.Proficiency.Group.": ["weapons", "armor", "languages"],
+    // choiceTitleKey() uses a CHOICE_TITLES key when it knows one, else the kind.
+    "LYRIAN.Proficiency.Choice.": [
+      ...[...choiceTitles.matchAll(/"([a-z-]+)":/g)].map((match) => match[1]),
+      "weapons", "armor", "languages"
+    ],
+    "LYRIAN.Hybrid.Invalid.": literals(
+      "module/rules/hybrid-race.mjs", /\breason:\s*"([a-z]+)"/g
+    ),
+    // module/integrations/token-action-hud.mjs labels each group by its type.
+    "LYRIAN.TAH.ActionType.": literals(
+      "module/integrations/token-action-hud.mjs",
+      /#(?:itemActions\(\[[^\]]*\]|buildSkillGroup\("[a-z]+"),\s*"([a-z]+)"/g
+    )
+  };
+
+  const missing = [];
+  for (const [prefix, values] of Object.entries(families)) {
+    assert.ok(values.length, `${prefix} derived no values to check`);
+    for (const value of values) {
+      if (!(`${prefix}${value}` in LANGUAGE)) missing.push(`${prefix}${value}`);
+    }
+  }
+  assert.deepEqual(missing, []);
+
+  // A family the table does not know about is unchecked, which is how a key
+  // built from a lower-cased value slipped past every other test here. Adding
+  // a call site therefore has to declare what that call site can produce.
+  const undeclared = [];
+  for (const file of [...filesUnder("module", [".mjs"]), ...filesUnder("migrations", [".mjs"])]) {
+    for (const match of fs.readFileSync(file, "utf8")
+      .matchAll(/`(LYRIAN\.[A-Za-z0-9_.-]*\.)\$\{/g)) {
+      if (!(match[1] in families)) undeclared.push(`${path.relative(ROOT, file)}: ${match[1]}`);
+    }
+  }
+  assert.deepEqual(undeclared, []);
+});
