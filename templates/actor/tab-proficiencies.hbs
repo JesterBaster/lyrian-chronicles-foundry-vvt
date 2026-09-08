@@ -1,0 +1,75 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="proficiencies" data-group="primary" data-application-part="proficiencies">
+  <p class="lyr-note">{{localize "LYRIAN.Hint.ProficiencyChoices"}}</p>
+
+  <section class="lyr-prof-summary">
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.WeaponArmourProficiencies"}}</h2>
+    <div class="lyr-prof-summary__line"><strong>{{localize "LYRIAN.Inventory.Section.armor"}}:</strong>
+      {{#each proficiency.automatic.armor}}<span class="lyr-prof-chip lyr-prof-chip--armor">{{name}}</span>{{else}}<em>{{localize "LYRIAN.Empty.NoneGranted"}}</em>{{/each}}
+    </div>
+    <div class="lyr-prof-summary__line"><strong>{{localize "LYRIAN.Inventory.Section.weapon"}}:</strong>
+      {{#each proficiency.automatic.weapons}}<span class="lyr-prof-chip">{{name}}</span>{{else}}<em>{{localize "LYRIAN.Empty.NoneGranted"}}</em>{{/each}}
+    </div>
+    <div class="lyr-prof-sources">
+      {{#each proficiency.sources as |source|}}
+        <section class="lyr-prof-source">
+          <header class="lyr-prof-source__header">
+            <strong>{{source.name}}</strong>
+            {{#if source.entries}}<span>{{localize "LYRIAN.UI.Granted"}}: {{#each source.entries}}{{this}}{{#unless @last}} · {{/unless}}{{/each}}</span>{{/if}}
+          </header>
+          {{#if source.choices.length}}
+            <div class="lyr-prof-choice-grid">
+              {{#each source.choices as |choice|}}
+                <section class="lyr-prof-choice {{#if choice.complete}}is-complete{{/if}}">
+                  <header>
+                    <strong>{{choice.title}}</strong>
+                    <span>{{#if choice.complete}}<i class="fa-solid fa-check"></i> {{localize "LYRIAN.UI.Saved"}}{{else}}{{localize "LYRIAN.Action.Choose"}}{{/if}}</span>
+                  </header>
+                  {{#each choice.slots as |slot|}}
+                    <div class="lyr-prof-choice__row" data-proficiency-choice data-choice-id="{{../id}}" data-choice-index="{{slot.index}}">
+                  {{#if ../allowCustom}}
+                        <input type="text" data-proficiency-choice-value value="{{slot.value}}" placeholder="{{localize "LYRIAN.Placeholder.Language"}}" aria-label="{{../title}}" />
+                  {{else}}
+                        <select data-proficiency-choice-value aria-label="{{../title}}">
+                          <option value="">— {{localize "LYRIAN.Action.Select"}} —</option>
+                      {{#each slot.options as |option|}}
+                            <option value="{{option.value}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
+                      {{/each}}
+                        </select>
+                  {{/if}}
+                    </div>
+                  {{/each}}
+                  <details class="lyr-prof-choice__rule">
+                    <summary>{{localize "LYRIAN.Action.ViewRule"}}</summary>
+                    <p>{{choice.label}}</p>
+                  </details>
+                </section>
+              {{/each}}
+            </div>
+          {{/if}}
+        </section>
+      {{else}}<p class="lyr-empty">{{localize "LYRIAN.Empty.ProficiencySources"}}</p>{{/each}}
+    </div>
+  </section>
+
+  {{#*inline "proficiencyCard"}}
+    <section class="lyr-prof-card" data-proficiency-kind="{{kind}}">
+      <header><h2><i class="{{icon}}"></i> {{title}}</h2><span>{{entries.length}}</span></header>
+      <div class="lyr-prof-list">
+        {{#each entries as |entry|}}
+          <span class="lyr-prof-entry {{#if entry.granted}}is-granted{{/if}}">
+            {{entry.name}}
+            {{#if entry.granted}}<em>{{localize "LYRIAN.UI.Granted"}}</em>{{else}}<button type="button" data-action="removeProficiency" data-kind="{{../kind}}" data-name="{{entry.name}}" title="{{localize "LYRIAN.Action.Remove"}}">×</button>{{/if}}
+          </span>
+        {{else}}<em class="lyr-empty">{{localize "LYRIAN.UI.None"}}</em>{{/each}}
+      </div>
+      <div class="lyr-prof-add">
+        <input type="text" data-proficiency-input placeholder="{{placeholder}}" />
+        <button type="button" data-action="addProficiency" data-kind="{{kind}}">+ {{localize "LYRIAN.Action.Add"}}</button>
+      </div>
+    </section>
+  {{/inline}}
+
+  {{> proficiencyCard kind="weapons" title=(localize "LYRIAN.UI.WeaponProficiencies") icon="fa-solid fa-khanda" entries=proficiency.groups.weapons placeholder=(localize "LYRIAN.Placeholder.WeaponProficiency")}}
+  {{> proficiencyCard kind="armor" title=(localize "LYRIAN.UI.ArmourProficiencies") icon="fa-solid fa-shield" entries=proficiency.groups.armor placeholder=(localize "LYRIAN.Placeholder.ArmourProficiency")}}
+  {{> proficiencyCard kind="languages" title=(localize "LYRIAN.UI.Languages") icon="fa-solid fa-comment" entries=proficiency.groups.languages placeholder=(localize "LYRIAN.Placeholder.Languages")}}
+</section>
