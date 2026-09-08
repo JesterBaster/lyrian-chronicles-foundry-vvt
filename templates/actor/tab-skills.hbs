@@ -1,0 +1,60 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="skills" data-group="primary" data-application-part="skills">
+
+  <p class="lyr-note">
+    {{localize "LYRIAN.Hint.SkillRoll"}} {{localize "LYRIAN.Hint.CurrentRankCap"}}: <strong>{{skillCapLabel}}</strong>.
+  </p>
+  {{#if system.raceSkillPoints.granted}}
+    <p class="lyr-note">{{localize "LYRIAN.UI.RacialSkillPoints"}}: <strong>{{system.raceSkillPoints.allocated}} / {{system.raceSkillPoints.granted}}</strong>{{#if system.raceSkillPoints.unallocated}} · {{localize "LYRIAN.Hint.UnallocatedRacialSkillPoints" count=system.raceSkillPoints.unallocated}}{{/if}}.</p>
+  {{/if}}
+
+  {{#*inline "expertiseBlock"}}
+    <div class="lyr-exp">
+      {{#each this.expertises as |exp index|}}
+        <div class="lyr-exp__row" data-expertise-row data-group="{{../group}}" data-skill="{{../key}}">
+          <button type="button" class="lyr-exp__roll"
+                  data-action="{{../rollAction}}" data-skill="{{../key}}" data-expertise-index="{{index}}"
+                  title="{{localize "LYRIAN.Action.RollExpertise"}}">
+            {{#if exp.name}}{{exp.name}}{{else}}({{localize "LYRIAN.UI.Unnamed"}}){{/if}}
+            <em>{{lyrianSigned exp.total}}</em>
+          </button>
+          <input type="text" data-expertise-field data-expertise-name
+                 data-group="{{../group}}" data-skill="{{../key}}"
+                 value="{{exp.name}}" placeholder="{{localize "LYRIAN.Placeholder.ExpertiseName"}}" />
+          <input type="number" data-expertise-field data-expertise-rank
+                 data-group="{{../group}}" data-skill="{{../key}}"
+                 value="{{exp.rank}}" min="0" step="1"
+                 {{#unless @root.isGM}}{{#if exp.cap}}max="{{exp.cap}}"{{/if}}{{/unless}}
+                 title="{{localize "LYRIAN.UI.ExpertisePoints"}}" />
+          <button type="button" class="lyr-icon" data-action="removeExpertise"
+                  data-group="{{../group}}" data-skill="{{../key}}" data-index="{{index}}"
+                  title="{{localize "LYRIAN.Action.Remove"}}"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      {{/each}}
+      <button type="button" class="lyr-exp__add" data-action="addExpertise"
+              data-group="{{group}}" data-skill="{{key}}">+ {{localize "LYRIAN.UI.Expertise"}}</button>
+    </div>
+  {{/inline}}
+
+  <div class="lyr-skill-groups">
+    {{#each skillGroups as |group|}}
+      <div class="lyr-skill-group">
+        <h3 class="lyr-skill-group__title">{{group.label}} <em>{{group.value}}</em></h3>
+        {{#each group.skills as |skill|}}
+          <div class="lyr-skill-entry {{#if skill.atCap}}lyr-skill--capped{{/if}}">
+            <div class="lyr-skill">
+              <button type="button" class="lyr-skill__roll" data-action="rollSkill" data-skill="{{skill.key}}">
+                {{skill.label}}
+              </button>
+              <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
+              <input class="lyr-skill__rank" type="number" name="system.skills.{{skill.key}}.rank"
+                     value="{{skill.rank}}" min="0" step="1"
+                     {{#unless @root.isGM}}{{#if skill.cap}}max="{{skill.cap}}"{{/if}}{{/unless}} title="{{localize "LYRIAN.UI.Ranks"}}" />
+            </div>
+            {{> expertiseBlock expertises=skill.expertises key=skill.key group="skills" rollAction="rollSkill"}}
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+
+</section>
