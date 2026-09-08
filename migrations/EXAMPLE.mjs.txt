@@ -1,0 +1,21 @@
+// Copy this to migrations/<version>.mjs and add <version> to VERSIONS in migrate.mjs.
+// Increase the affected DOCUMENT_SCHEMA_VERSIONS entry, transform only older
+// documents, and write system.schemaVersion in the same successful update.
+import { forEachDocument } from "./migrate.mjs";
+
+export async function runMigration() {
+  await forEachDocument("Actor", async (actor) => {
+    // Example: a field was renamed and old actors still carry the old one.
+    const old = actor.system.oldFieldName;
+    if (old === undefined) return;
+    await actor.update({
+      "system.newFieldName": old,
+      "system.-=oldFieldName": null   // the -= prefix deletes the stale key
+    });
+  });
+
+  await forEachDocument("Item", async (item) => {
+    if (item.type !== "weapon") return;
+    // ...
+  });
+}
