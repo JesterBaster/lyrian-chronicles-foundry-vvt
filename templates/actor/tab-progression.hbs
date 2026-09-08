@@ -1,0 +1,137 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="progression" data-group="primary" data-application-part="progression">
+
+  <div class="lyr-compendium-strip lyr-compendium-strip--wrap">
+    <span>Drag official progression options onto this sheet:</span>
+    <button type="button" data-action="browsePack" data-pack="races">Races</button>
+    <button type="button" data-action="browsePack" data-pack="classes">Classes</button>
+    <button type="button" data-action="browsePack" data-pack="breakthroughs">Breakthroughs</button>
+  </div>
+
+  <div class="lyr-spirit">
+    <div class="lyr-spirit__core">
+      <span class="lyr-spirit__label">Spirit core</span>
+      <strong class="lyr-spirit__value">{{system.spiritCore}}</strong>
+      <em>{{localize system.tier.label}}</em>
+    </div>
+    <div class="lyr-spirit__exp">
+      <label>EXP earned <input type="number" name="system.exp.total" value="{{system.exp.total}}" /></label>
+      <label>EXP spent <input type="number" name="system.exp.spent" value="{{system.exp.spent}}" /></label>
+      {{#if system.ambitionExp}}<span class="lyr-note">Ambition: +{{system.ambitionExp}} EXP and Spirit Core</span>{{/if}}
+      <span class="lyr-note">Unspent: <strong>{{system.exp.available}}</strong></span>
+    </div>
+    <div class="lyr-spirit__interlude">
+      <label>Interlude points <input type="number" name="system.interlude.points" value="{{system.interlude.points}}" /></label>
+      <label>Errand points <input type="number" name="system.interlude.errandPoints" value="{{system.interlude.errandPoints}}" /></label>
+    </div>
+  </div>
+
+  <p class="lyr-note">
+    Classes on this sheet account for {{expInClasses}} EXP, breakthroughs for {{expInBreakthroughs}} EXP.
+    Spirit core should match the total you have committed.
+  </p>
+
+  <h2 class="lyr-heading">Interlude actions</h2>
+  <div class="lyr-action-grid">
+    <button type="button" class="lyr-action-card" data-action="takeRest">
+      <strong>Rest</strong>
+      <span>Full HP and mana, plus 20% of each as temporary. Clears Downed.</span>
+    </button>
+    <button type="button" class="lyr-action-card" data-action="recoverInjury">
+      <strong>Recover</strong>
+      <span>Remove one injury. Costs 1 interlude point.</span>
+    </button>
+    <button type="button" class="lyr-action-card" data-action="spendExpPrompt">
+      <strong>Train</strong>
+      <span>Commit EXP to your Spirit Core.</span>
+    </button>
+    <button type="button" class="lyr-action-card" data-action="openCreation">
+      <strong>Character creation</strong>
+      <span>Reopen the guided setup wizard.</span>
+    </button>
+  </div>
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Classes</h2>
+    <button type="button" data-action="createItem" data-type="class">Add class</button>
+  </div>
+  <ul class="lyr-list">
+    {{#each items.classes as |item|}}
+      <li class="lyr-row {{#if item.system.mastered}}lyr-row--mastered{{/if}}" data-item-id="{{item.id}}">
+        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{item.name}} {{#if item.system.mastered}}<em class="lyr-tag">Mastered</em>{{/if}}</span>
+          <span class="lyr-row__meta">
+            Tier {{item.system.tier}} · Level {{item.system.abilitiesUnlocked}} / 8 · {{item.system.expInvested}} EXP invested
+          </span>
+        </div>
+        <div class="lyr-row__actions">
+          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="-1" title="Lower class level">&minus;</button>
+          <strong>{{item.system.abilitiesUnlocked}}</strong>
+          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="1" title="Raise class level">+</button>
+          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </li>
+    {{else}}<li class="lyr-empty">No classes yet.</li>{{/each}}
+  </ul>
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Breakthroughs</h2>
+    <button type="button" data-action="createItem" data-type="breakthrough">Add breakthrough</button>
+  </div>
+  <ul class="lyr-list">
+    {{#each items.breakthroughs as |item|}}
+      <li class="lyr-row" data-item-id="{{item.id}}">
+        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{item.name}}</span>
+          <span class="lyr-row__meta">Level {{item.system.level}} · {{item.system.expCost}} EXP</span>
+        </div>
+        <div class="lyr-row__actions">
+          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </li>
+    {{else}}<li class="lyr-empty">No breakthroughs yet.</li>{{/each}}
+  </ul>
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Race</h2>
+    <button type="button" data-action="createItem" data-type="race">Add race</button>
+  </div>
+  <ul class="lyr-list">
+    {{#each raceRows as |row|}}
+      <li class="lyr-row" data-item-id="{{row.item.id}}">
+        <img class="lyr-row__icon" src="{{row.item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{row.item.name}}</span>
+          <span class="lyr-row__meta">
+            {{row.item.system.subrace}} {{#if row.item.system.clan}}· {{row.item.system.clan}}{{/if}}
+            {{#if row.granted}}· Racial skills {{row.allocated}} / {{row.granted}}{{/if}}
+          </span>
+        </div>
+        <div class="lyr-row__actions">
+          {{#if row.granted}}<button type="button" data-action="allocateRaceSkills">Skills {{#if row.unallocated}}({{row.unallocated}} left){{/if}}</button>{{/if}}
+          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </li>
+    {{else}}<li class="lyr-empty">No race entry.</li>{{/each}}
+  </ul>
+
+  {{#if raceSummary}}
+    <div class="lyr-race-summary">
+      <section class="lyr-reference-card">
+        <h3>{{raceSummary.primary.name}}</h3>
+        <p><strong>Attributes:</strong> {{raceSummary.primary.system.attributes}}</p>
+        {{#if raceSummary.primary.system.ambition}}<p><strong>Ambition:</strong> {{raceSummary.primary.system.ambition}}</p>{{/if}}
+      </section>
+      {{#if raceSummary.ancestry}}
+        <section class="lyr-reference-card"><h3>Subrace · {{raceSummary.ancestry.name}}</h3><p>{{raceSummary.ancestry.system.description}}</p></section>
+      {{/if}}
+      {{#if raceSummary.variant}}
+        <section class="lyr-reference-card"><h3>{{raceSummary.variant.name}}</h3><p>{{raceSummary.variant.description}}</p></section>
+      {{/if}}
+    </div>
+  {{/if}}
+</section>
