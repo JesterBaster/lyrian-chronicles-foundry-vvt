@@ -1,0 +1,308 @@
+{
+  "id": "lyrian-chronicles",
+  "title": "The Lyrian Chronicles",
+  "description": "A fan-made Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG, using official game content with permission. Includes complete rulebook v0.13.1 compendiums, Flo's Madness crafting references, and gameplay automation.",
+  "version": "0.6.30",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Jester",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/lyrian.mjs"
+  ],
+  "styles": [
+    "styles/lyrian.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "biography"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "biography",
+          "tactics",
+          "runningMonster"
+        ]
+      },
+      "monster": {
+        "htmlFields": [
+          "biography",
+          "tactics",
+          "runningMonster"
+        ]
+      }
+    },
+    "Item": {
+      "keyword": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ability": {
+        "htmlFields": [
+          "description",
+          "benefits"
+        ]
+      },
+      "class": {
+        "htmlFields": [
+          "description",
+          "guide"
+        ]
+      },
+      "breakthrough": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "race": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "equipment": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "monsterAbility": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "injury": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "mana",
+  "socket": true,
+  "packs": [
+    {
+      "name": "rules-setting-guide",
+      "label": "01 · Rules & Setting Guide",
+      "type": "JournalEntry",
+      "path": "packs/rules-setting-guide",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "keywords",
+      "label": "02 · Keywords",
+      "type": "Item",
+      "path": "packs/keywords",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "breakthroughs",
+      "label": "03 · Breakthroughs",
+      "type": "Item",
+      "path": "packs/breakthroughs",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "player-abilities",
+      "label": "04 · Player Abilities",
+      "type": "Item",
+      "path": "packs/player-abilities",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "races",
+      "label": "05 · Races & Ancestries",
+      "type": "Item",
+      "path": "packs/races",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "classes",
+      "label": "06 · Classes",
+      "type": "Item",
+      "path": "packs/classes",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "weapons",
+      "label": "07 · Weapons",
+      "type": "Item",
+      "path": "packs/weapons",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "armor-shields",
+      "label": "08 · Armor & Shields",
+      "type": "Item",
+      "path": "packs/armor-shields",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "consumables",
+      "label": "09 · Consumables",
+      "type": "Item",
+      "path": "packs/consumables",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "gear-kits",
+      "label": "10 · Gear & Kits",
+      "type": "Item",
+      "path": "packs/gear-kits",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "artifices",
+      "label": "11 · Artifices",
+      "type": "Item",
+      "path": "packs/artifices",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "materials",
+      "label": "12 · Materials & Mats",
+      "type": "Item",
+      "path": "packs/materials",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "mods",
+      "label": "13 · Item Mods",
+      "type": "Item",
+      "path": "packs/mods",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "crafting-guide",
+      "label": "14 · Crafting Guide",
+      "type": "JournalEntry",
+      "path": "packs/crafting-guide",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "monsters",
+      "label": "15 · Monsters",
+      "type": "Actor",
+      "path": "packs/monsters",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "monster-abilities",
+      "label": "16 · Monster Abilities",
+      "type": "Item",
+      "path": "packs/monster-abilities",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Rules & Characters",
+      "sorting": "m",
+      "color": "#c9a227",
+      "packs": [
+        "rules-setting-guide",
+        "keywords",
+        "breakthroughs",
+        "player-abilities",
+        "races",
+        "classes"
+      ]
+    },
+    {
+      "name": "Equipment & Crafting",
+      "sorting": "m",
+      "color": "#c9a227",
+      "packs": [
+        "weapons",
+        "armor-shields",
+        "consumables",
+        "gear-kits",
+        "artifices",
+        "materials",
+        "mods",
+        "crafting-guide"
+      ]
+    },
+    {
+      "name": "GM Bestiary",
+      "sorting": "m",
+      "color": "#8f2f3f",
+      "packs": [
+        "monsters",
+        "monster-abilities"
+      ]
+    }
+  ],
+  "url": "https://github.com/JesterBaster/lyrian-chronicles",
+  "manifest": "https://github.com/JesterBaster/lyrian-chronicles/releases/latest/download/system.json",
+  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/0.6.30/system.zip",
+  "license": "LICENSE.txt",
+  "readme": "README.md"
+}
