@@ -1,0 +1,2578 @@
+[
+  {
+    "_id": "25c7150d8dec68f5",
+    "name": "Active",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You cannot use the Prepare action on this ability.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "df0f15b95307b0029fe21c725b534775b718f67680644c571efd269c62615044",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--active",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Active"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--active",
+        "stableId": "keyword--active",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "df0f15b95307b0029fe21c725b534775b718f67680644c571efd269c62615044",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9197fb75b7ba96a1",
+    "name": "Aid",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Abilities with the Aid keyword can only be used on allies, unless the ability specifically states you can use it on yourself.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "08c496a30aea5716a4e2946101f82c378e750c0853e64bf2e78f2ba973ab8bb6",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--aid",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Aid"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--aid",
+        "stableId": "keyword--aid",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "08c496a30aea5716a4e2946101f82c378e750c0853e64bf2e78f2ba973ab8bb6",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "be4a8a15fa594a6c",
+    "name": "Artillery",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The attack can target non-hidden units behind cover (even full cover) and any cover is calculated from above the target rather than from your position to the target.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "d704b5d0962a8519e4f6fa15dfac3a8fde48af407f6789d2681a9374050fa78c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--artillery",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Artillery"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--artillery",
+        "stableId": "keyword--artillery",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "d704b5d0962a8519e4f6fa15dfac3a8fde48af407f6789d2681a9374050fa78c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "84006b07828b2d88",
+    "name": "Augment",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>An attack that has been modified by an Augment effect cannot be modified again and given another Augment effect.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "98260fc69b6e9d985c52cc4264c60c8d7106aec0a55030da8e0a204e2f167833",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--augment",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Augment"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--augment",
+        "stableId": "keyword--augment",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "98260fc69b6e9d985c52cc4264c60c8d7106aec0a55030da8e0a204e2f167833",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "0120bf52084d3873",
+    "name": "Blanketing",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>When you make an attack against multiple targets with this ability, roll one accuracy and damage check that applies against all targets.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "8788f11dad858f4922a1a46cc365c951014916f934d8c15957bd809ca26aaf86",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--blanketing",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Blanketing"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--blanketing",
+        "stableId": "keyword--blanketing",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "8788f11dad858f4922a1a46cc365c951014916f934d8c15957bd809ca26aaf86",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9927477f6c4f7ba7",
+    "name": "Bleeding",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You take 1d6 true damage at the start of your turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "efa981bcdccc685ec4dd87df4fd3c9732669cc58e20e7aa86b1235ba9a5150b9",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--bleeding",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Bleeding"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--bleeding",
+        "stableId": "keyword--bleeding",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "efa981bcdccc685ec4dd87df4fd3c9732669cc58e20e7aa86b1235ba9a5150b9",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "f2827d014eca0952",
+    "name": "Blinded",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Blinded characters suffer a -X penalty to their accuracy rolls where X is the blinded value. If they are Blinded for 3 or higher, they cannot make any ranged attacks without first locating a target through another means than sight. If they are blinded for 5 or higher, they also cannot gain Sure Hit on their attacks.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "70721c65a0be74e561acd8dd38bc0bb05abad9d0022c1431262257ad95ae410c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--blinded",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Blinded"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--blinded",
+        "stableId": "keyword--blinded",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "70721c65a0be74e561acd8dd38bc0bb05abad9d0022c1431262257ad95ae410c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "41a2157d4abb74a5",
+    "name": "Block Crush",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Block Crush attacks ignore any additional Guard gained from the Block action.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ec212adf7f5be9cf8216fc6e312182f07d1007956be7c4ecc32d84b1243bef28",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--block-crush",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Block Crush"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--block-crush",
+        "stableId": "keyword--block-crush",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ec212adf7f5be9cf8216fc6e312182f07d1007956be7c4ecc32d84b1243bef28",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "f602e91c84c4f3c0",
+    "name": "Broken",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Only applies to equipment. Armor and shields that are broken provide no benefit or negatives. Weapons that are broken can only be used as an improvised weapon.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "fad2a33e6a8e7121237243b1fb88d0e1febfbb68f5cd202973a704715d6faa35",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--broken",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Broken"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--broken",
+        "stableId": "keyword--broken",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "fad2a33e6a8e7121237243b1fb88d0e1febfbb68f5cd202973a704715d6faa35",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "a759b0681adc2d4e",
+    "name": "Burning",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A Burning character takes X damage at the end of their turn. They may spend 1 AP to remove this effect.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "792c04392b2571604583d2db0a89873cbe7de5c49ffbc3e1d442ff9500f7d60d",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--burning",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Burning"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--burning",
+        "stableId": "keyword--burning",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "792c04392b2571604583d2db0a89873cbe7de5c49ffbc3e1d442ff9500f7d60d",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "e38c064d2aa1f546",
+    "name": "Calcification",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Your agility is lowered by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "720de9acd0209d04c4fd71b324dbd0a12e38e5e5b24c1e336890c35714a195b2",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--calcification",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Calcification"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--calcification",
+        "stableId": "keyword--calcification",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "720de9acd0209d04c4fd71b324dbd0a12e38e5e5b24c1e336890c35714a195b2",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "f4944140763dd688",
+    "name": "Challenge",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>If a challenged character does not include the challenger as a target when making an attack, they provoke a melee attack of opportunity from the challenger.</p><p>This does not trigger if the challenged target makes an attack of opportunity or if the challenger is not a target due effects such as charm.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "2755ef6040250aa2e5139bd42ffa39c1f4ba72c842880a876953eb8376c290d6",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--challenge",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Challenge"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--challenge",
+        "stableId": "keyword--challenge",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "2755ef6040250aa2e5139bd42ffa39c1f4ba72c842880a876953eb8376c290d6",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "facdab607046077c",
+    "name": "Charm",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You may not willingly target the charmer with attacks unless you have no other valid targets (excluding allies) for the attack. Your AoE abilities that target allies also include the charmer, and your AoE attacks or abilities that exclude allies also exclude the charmer.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "e7d18002bf9815aca04b7ffdf7617a0257f8b494b6f91125c0d42141c617444a",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--charm",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Charm"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--charm",
+        "stableId": "keyword--charm",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "e7d18002bf9815aca04b7ffdf7617a0257f8b494b6f91125c0d42141c617444a",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "6eace31c737e7065",
+    "name": "Circuit",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The first time each combat you use an ability with this keyword, the mana cost is reduced by 1. Afterwards, this mana cost reduction is removed from all abilities with this keyword.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "4c64d7cf6a5df6fc1a6118c86b999483c178fbabdd7d2d71515706b3ed91066d",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--circuit",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Circuit"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--circuit",
+        "stableId": "keyword--circuit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "4c64d7cf6a5df6fc1a6118c86b999483c178fbabdd7d2d71515706b3ed91066d",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "4a33729bf6fdba91",
+    "name": "Combo",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Combo abilities gain a bonus when used directly after another ability. Combo abilities remain valid until you spend AP on a different ability or action.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "24b56c9a1ace5795802b28d4ad62240cf722e808ba4cb75ee91d7808188c636f",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--combo",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Combo"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--combo",
+        "stableId": "keyword--combo",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "24b56c9a1ace5795802b28d4ad62240cf722e808ba4cb75ee91d7808188c636f",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "99b1edf20b19da1b",
+    "name": "Concentration",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A character can only have 1 Concentration effect active at the same time. They may drop a Concentration effect during their turn for 0 AP. When a character gets Downed, they lose Concentration.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "3ebb698e725772b6fa027a44373d23c41f233558aa428aef9adfc03838e7a66c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--concentration",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Concentration"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--concentration",
+        "stableId": "keyword--concentration",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "3ebb698e725772b6fa027a44373d23c41f233558aa428aef9adfc03838e7a66c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "90717af371640b2b",
+    "name": "Crushing",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>On an unblocked hit, this attack deals a minimum damage equal to your Power.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "0ddea91e497198b73beb528e20e3af6901af335f9f7147901431a2eb3e36057c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--crushing",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Crushing"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--crushing",
+        "stableId": "keyword--crushing",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "0ddea91e497198b73beb528e20e3af6901af335f9f7147901431a2eb3e36057c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b7dd5032edf94bcc",
+    "name": "Daze",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You immediately lose 1 AP. If you do not have any AP, you instead regen 1 less AP at the start of your next turn. A dazed target becomes immune to Daze until the end of their next turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "2da90ed7612ee90c2a3021ebab5a8058fcdd94953889a372fe0c4c39eac49cae",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--daze",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Daze"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--daze",
+        "stableId": "keyword--daze",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "2da90ed7612ee90c2a3021ebab5a8058fcdd94953889a372fe0c4c39eac49cae",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "2d6938964086f805",
+    "name": "Disarm",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>When disarmed, you cannot make weapon attacks with the weapon you were wielding when you got disarmed. You must draw the weapon again to use it when the Disarm ends. Unarmed attacks are unaffected by Disarm.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "78cb8be4c37a6ca8ba2257cd1466aabef6620b47100b39f5a62de8d829b3e7c0",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--disarm",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Disarm"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--disarm",
+        "stableId": "keyword--disarm",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "78cb8be4c37a6ca8ba2257cd1466aabef6620b47100b39f5a62de8d829b3e7c0",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "af5fe50496f0f624",
+    "name": "Divine",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>If you took the Divine's Chosen breakthrough, this ability's damage type becomes your chosen divine's damage type instead of Holy.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "e05c2090ade2da26a3741e63fa81716359d0c189ef4c4b8e0e36cf08fb01895f",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--divine",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Divine"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--divine",
+        "stableId": "keyword--divine",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "e05c2090ade2da26a3741e63fa81716359d0c189ef4c4b8e0e36cf08fb01895f",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "a720c5c884188ac5",
+    "name": "Domain",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A domain area spell. Only one domain area may be active at a location at a time.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "98383a8120f641bafdc3c2be18a70c29892ab35e896ab6e28736383a22f8c05f",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--domain",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Domain"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--domain",
+        "stableId": "keyword--domain",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "98383a8120f641bafdc3c2be18a70c29892ab35e896ab6e28736383a22f8c05f",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "49a1727b357fb8bd",
+    "name": "Dual Wield",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability counts as your dual wield attack for the turn. You cannot use this ability if you have already made a dual wield attack this turn. After using it, you cannot make another dual wield attack this turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "4963b3c295cabfafed08b5c76c582fc27b1c5443fb054e8a8b67f2dd072acabd",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--dual-wield",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Dual Wield"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--dual-wield",
+        "stableId": "keyword--dual-wield",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "4963b3c295cabfafed08b5c76c582fc27b1c5443fb054e8a8b67f2dd072acabd",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "65511fe2a82c3c9a",
+    "name": "Enchantment",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>An enchantment is placed on a weapon. A weapon can only have 1 enchantment at the same time. If an enchantment is placed on a channeling weapon, it transfer the enchantment properties to any spells cast while holding it.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "7338e4dc0668b2a62a7c2477461bfe13d3bd3c37b2574df63b8a3c2dc206eeb2",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--enchantment",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Enchantment"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--enchantment",
+        "stableId": "keyword--enchantment",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "7338e4dc0668b2a62a7c2477461bfe13d3bd3c37b2574df63b8a3c2dc206eeb2",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9004883511d0ecd8",
+    "name": "Esoteric Art",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You can only use 1 ability with this keyword or with the Secret Art keyword per encounter.&nbsp;</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "db411929069609f202b203354113956efbcd0936646548a5eb7c6af89908905d",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--esoteric-art",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Esoteric Art"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--esoteric-art",
+        "stableId": "keyword--esoteric-art",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "db411929069609f202b203354113956efbcd0936646548a5eb7c6af89908905d",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "99784ac5c41ecf73",
+    "name": "Expose",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The target's crit threshold is reduced by the expose value (base 1, reducing normal crit threshold from 20→19). Stacks with katana's reduced crit threshold and other abilities which lower the crit threshold of the user.</p><p>Expose is removed once the target is critically hit (regardless of if they defend or not)</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "7fb3c7258f3c8a0ab568faf68ca75911cff14b76800bbea599216136b7962a77",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--expose",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Expose"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--expose",
+        "stableId": "keyword--expose",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "7fb3c7258f3c8a0ab568faf68ca75911cff14b76800bbea599216136b7962a77",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "bb98f8dce836c7bb",
+    "name": "Fire",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Spells and attacks that deal Fire damage may ignite flammable, unattended objects.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "09f6a246a2870c585509f884909183599fe61bc07c7696c7502d7fb7a48f5b70",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--fire",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Fire"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--fire",
+        "stableId": "keyword--fire",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "09f6a246a2870c585509f884909183599fe61bc07c7696c7502d7fb7a48f5b70",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "74f6167a862cc8b0",
+    "name": "Flashback",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Flashbacks are abilities that refer to an earlier time in the campaign. They reflect prior planning that the character has made to affect the current situation.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ab115669845630a718e7a640a21b14719cde5fa7008b28b458512b5a832ed2ae",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--flashback",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Flashback"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--flashback",
+        "stableId": "keyword--flashback",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ab115669845630a718e7a640a21b14719cde5fa7008b28b458512b5a832ed2ae",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "1d8f3a1f2e9d2e5a",
+    "name": "Full Pierce",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Full pierce attacks cannot be reduced by guard.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "42c3ca641720855150486983d75d5d69a3cda14468cd12c8fd24729f584b0f9e",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--full-pierce",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Full Pierce"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--full-pierce",
+        "stableId": "keyword--full-pierce",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "42c3ca641720855150486983d75d5d69a3cda14468cd12c8fd24729f584b0f9e",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b87736c440ca85b0",
+    "name": "Half Pierce",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Half Pierce attacks ignore Guard, unless the target takes the Block action or Dodge action.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "d1eda70619282e7cd326dede847baf2f73b00a32a57489df0bdf823d931058bf",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--half-pierce",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Half Pierce"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--half-pierce",
+        "stableId": "keyword--half-pierce",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "d1eda70619282e7cd326dede847baf2f73b00a32a57489df0bdf823d931058bf",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "e22a67bca37d13bf",
+    "name": "Half Rapid",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability may be used once on each creature every round.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "81415a2f8d4df1b92204f69f455b05ec7092c105b840623ce7d00449df1ec1b5",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--half-rapid",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Half Rapid"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--half-rapid",
+        "stableId": "keyword--half-rapid",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "81415a2f8d4df1b92204f69f455b05ec7092c105b840623ce7d00449df1ec1b5",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b4a9a7b49ada2833",
+    "name": "Hellfire",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Hellfire functions like Burning (You take X damage at the end of your turn), but it can no longer be removed the normal way if not removed before the end of the target’s next turn. It can still be dispelled through the use of abilities.</p><p>Hellfire can be applied to enemies immune to Burning, but it can still be removed like normal even after a turn has passed. Hellfire is automatically removed at the end of the encounter.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "b3e70c1245a10133f357a1febd0b98b86952fdb760cf23adc017e2757e3270d2",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--hellfire",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Hellfire"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--hellfire",
+        "stableId": "keyword--hellfire",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "b3e70c1245a10133f357a1febd0b98b86952fdb760cf23adc017e2757e3270d2",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "e20753db25f5eacb",
+    "name": "Hiding",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>While in Hiding, enemies cannot see or target you and even if they are aware of your presence, they cannot pinpoint your exact location. You lose Hiding if you move, attack or use any other ability that does not have the Stealth keyword unless that movement or attack says otherwise.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "73a04719f170e2118303a85765826f9b049603a532b663496b353a79af87b337",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--hiding",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Hiding"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--hiding",
+        "stableId": "keyword--hiding",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "73a04719f170e2118303a85765826f9b049603a532b663496b353a79af87b337",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "c80a734aa8744f12",
+    "name": "Illumination",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The next attack against you gets an X bonus to the accuracy roll (Consumed even on a miss).</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "3e388a7bbb51bd08734111f9618299bc8f3b9b610ad095fc231eff217b633915",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--illumination",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Illumination"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--illumination",
+        "stableId": "keyword--illumination",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "3e388a7bbb51bd08734111f9618299bc8f3b9b610ad095fc231eff217b633915",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "37cf2d8331d3dc0b",
+    "name": "Immovable",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>While not flying, effects from other creatures that knock you prone or force you to move such as knockbacks are ineffective.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "df1f6f4473d97bf75a4365b54f9942dfca9ca89f4f48ae1a53e4ad330f2c7a08",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--immovable",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Immovable"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--immovable",
+        "stableId": "keyword--immovable",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "df1f6f4473d97bf75a4365b54f9942dfca9ca89f4f48ae1a53e4ad330f2c7a08",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "943fd969f77d9fd2",
+    "name": "Instant",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Can be used while another action is resolving to temporarily interrupt it. The Instant ability resolves immediately and before any interrupted ability can resolve. The current action is cancelled and refunded if the target becomes invalid.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "7983b1dc37b7facf64f9fdaac085f32de4f9676f3986c7bd47acb99c8ae2e496",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--instant",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Instant"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--instant",
+        "stableId": "keyword--instant",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "7983b1dc37b7facf64f9fdaac085f32de4f9676f3986c7bd47acb99c8ae2e496",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "8736c6221f1d0f80",
+    "name": "Isolated",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>If you have no allies within 10ft of you and at least 2 enemies (or 1 boss type enemy) within 10ft of you, you are considered Isolated.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "d11d9cb573110d737458bee252f56f975d28629968b6a4f520acad4a6b9b2f01",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--isolated",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Isolated"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--isolated",
+        "stableId": "keyword--isolated",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "d11d9cb573110d737458bee252f56f975d28629968b6a4f520acad4a6b9b2f01",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9e5dcf349b689d93",
+    "name": "Killing Blow",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Killing Blow effects trigger when reducing the HP of enemy to 0 or lower.</p><p>You cannot benefit from the same Killing Blow effect against the same target more than once.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "72a6b0b18612b62205361ac03b3f6efda9fcf06bd9b0e569c9077ef7ba0cf07a",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--killing-blow",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Killing Blow"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--killing-blow",
+        "stableId": "keyword--killing-blow",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "72a6b0b18612b62205361ac03b3f6efda9fcf06bd9b0e569c9077ef7ba0cf07a",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "d5e4bcd821bb434d",
+    "name": "Lock On",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Lock On attacks ignore the bonus from dodge.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "d49f0923c77c42bfc4c2f5dcc7206c9fbd577de6f13df5527a54329738fc8b5b",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--lock-on",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Lock On"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--lock-on",
+        "stableId": "keyword--lock-on",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "d49f0923c77c42bfc4c2f5dcc7206c9fbd577de6f13df5527a54329738fc8b5b",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "f57ccdfed9dc166e",
+    "name": "Lockstep",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This attack always matches the target's base evasion (including bonuses etc, but they may still dodge it like normal).</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "5923b93da7cd90549d1397aca167423b67a18dc3ae69914a7d16b7d28e5f151c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--lockstep",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Lockstep"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--lockstep",
+        "stableId": "keyword--lockstep",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "5923b93da7cd90549d1397aca167423b67a18dc3ae69914a7d16b7d28e5f151c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "efc302b99946a87c",
+    "name": "Mandate",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You must target the inflicter of this debuff with your next single-target attack. If you don’t, you have defied the mandate. The Challenge effect is suppressed while Mandate is on you.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "cf2bf1a063f75248b37482886a06ce02a8e2097ae42a60dd5fe1abd2e0c669ff",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--mandate",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Mandate"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--mandate",
+        "stableId": "keyword--mandate",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "cf2bf1a063f75248b37482886a06ce02a8e2097ae42a60dd5fe1abd2e0c669ff",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9150be81ba2ac0e1",
+    "name": "Miracle",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A character may only cast 1 Miracle per encounter.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "c3230182d9ce11e86287f62e9aad2fdeaae5cc91ca5705aa4494da75b62f778d",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--miracle",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Miracle"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--miracle",
+        "stableId": "keyword--miracle",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "c3230182d9ce11e86287f62e9aad2fdeaae5cc91ca5705aa4494da75b62f778d",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "37e156838c7ffd42",
+    "name": "Mystic Eye",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability is made with a Mystic Eye.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "1bc957447e6f05449dc16bc3c8b7a47b7816be1769262ee9dd8967e3ee8aa10c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--mystic-eye",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Mystic Eye"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--mystic-eye",
+        "stableId": "keyword--mystic-eye",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "1bc957447e6f05449dc16bc3c8b7a47b7816be1769262ee9dd8967e3ee8aa10c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b06fabd1695b285d",
+    "name": "Ninjutsu",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability requires two free hands. You may wield Small weapon, Saboteur threaded dagger, One-handed thrown and Sets of Missiles weapons and still count as having your hand free.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "6220d6751bb6459522a6fcae02579c9a53fee86581af841ede942bf0902cf1e6",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--ninjutsu",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Ninjutsu"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--ninjutsu",
+        "stableId": "keyword--ninjutsu",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "6220d6751bb6459522a6fcae02579c9a53fee86581af841ede942bf0902cf1e6",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "aa6c9fc9ef407150",
+    "name": "Offstep",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Attacks against you always meet your base evasion (Including bonuses etc, but you may still dodge them like normal).</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "811280219ab6e73b4221e1be8fd96201c130c146297b1e60140dfec85f43447b",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--offstep",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Offstep"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--offstep",
+        "stableId": "keyword--offstep",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "811280219ab6e73b4221e1be8fd96201c130c146297b1e60140dfec85f43447b",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "335abd05ddbe3abe",
+    "name": "Opener",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability can only be used as the first action in a turn. (Paying upkeep does not count as an action)</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "f44b72f53f445e469a306a64dc6d73fd2bc7ba61739f7c91ad31e85371f34d67",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--opener",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Opener"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--opener",
+        "stableId": "keyword--opener",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "f44b72f53f445e469a306a64dc6d73fd2bc7ba61739f7c91ad31e85371f34d67",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "8a16beb6132b7878",
+    "name": "Opportunistic",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You may use this ability instead of making a regular of attack of opportunity. This ability is counted as making an attack of opportunity and you don't get your regular one if you use it.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "92ce268558deda9232168980adb501674d3d569c65b509f477469bc57cbdd41d",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--opportunistic",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Opportunistic"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--opportunistic",
+        "stableId": "keyword--opportunistic",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "92ce268558deda9232168980adb501674d3d569c65b509f477469bc57cbdd41d",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9aff1fb8c454e5b8",
+    "name": "Overcharge",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You may spend additional AP and/or Mana to increase the power of the ability.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ac04fb21a9f32d872f5e6c03ec33418c17610fa50a71429a9b95c4ae1c22ff8c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--overcharge",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Overcharge"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--overcharge",
+        "stableId": "keyword--overcharge",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ac04fb21a9f32d872f5e6c03ec33418c17610fa50a71429a9b95c4ae1c22ff8c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b01edc8080fdf5a6",
+    "name": "Pass",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You can move through enemy units for this movement.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "f614e604efc2ffed9a4a977884b11ca5a8dd9aaa6bc9f6484dcc94db49010569",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--pass",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Pass"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--pass",
+        "stableId": "keyword--pass",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "f614e604efc2ffed9a4a977884b11ca5a8dd9aaa6bc9f6484dcc94db49010569",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "cb088c738ae58257",
+    "name": "Persist",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This effect costs +X mana to dispel. If the creature dispelling it does not use mana, it takes +X AP (or +X RP) instead.</p><p>Does not apply when they use the natural way of removing it, if possible (For example by spending 1 AP to remove a Burn).</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "b9507bef1db49dba55f76598e109fab96acd44f82adf32311ae66130202bb96e",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--persist",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Persist"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--persist",
+        "stableId": "keyword--persist",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "b9507bef1db49dba55f76598e109fab96acd44f82adf32311ae66130202bb96e",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "3d349d45e1e21c26",
+    "name": "Petrify",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You gain +10 guard, but all attacks against you automatically hit and you cannot take any actions. You may be used as cover and any attack missing due to cover bonus you give hits you instead. Petrify cannot be removed by normal effects that remove debuffs, only by things that explicitly state it removes Petrify.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "400058118e552d4feb876e168e9d08a40227240d21f0ddbabadc8f7f386d3a11",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--petrify",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Petrify"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--petrify",
+        "stableId": "keyword--petrify",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "400058118e552d4feb876e168e9d08a40227240d21f0ddbabadc8f7f386d3a11",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "64adb4d4a2813821",
+    "name": "Pinpoint",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You ignore points of the target's guard equal to your Focus. Cannot reduce guard below 0.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "048ddff8dc76d6d839839490010ce4bf334a4608224f91eff8396de28a9ce9be",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--pinpoint",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Pinpoint"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--pinpoint",
+        "stableId": "keyword--pinpoint",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "048ddff8dc76d6d839839490010ce4bf334a4608224f91eff8396de28a9ce9be",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "ff32ce1208e67d42",
+    "name": "Presence Concealment",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You hide your mana output and aura, making it harder to detect you by magical means—Causing your spirit core to be considered 0 for the purposes of detection and aura abilities. &nbsp;In addition you gain a +5 bonus to stealth.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "f43aa915803c2d434a7bec23f59e67ee6ffb01d7066ea1eaf76d7d44351f5365",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--presence-concealment",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Presence Concealment"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--presence-concealment",
+        "stableId": "keyword--presence-concealment",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "f43aa915803c2d434a7bec23f59e67ee6ffb01d7066ea1eaf76d7d44351f5365",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "abf37720811d9ff0",
+    "name": "Prone",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>An ability with this keyword can be used while Prone with no penalty. All attacks without the Prone keyword cost +1 AP and RP while prone.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "24345d81dc1434badcbd2395cc68cba01cb0df7621b7911282c2cf45ee30b703",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--prone",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Prone"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--prone",
+        "stableId": "keyword--prone",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "24345d81dc1434badcbd2395cc68cba01cb0df7621b7911282c2cf45ee30b703",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "cafae2fe3aa74095",
+    "name": "Quick",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The first time after using an ability with Quick, other abilities with Quick used in same turn cost +1 AP.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "1285b88da340da392c9e4721dfcabc16d4db9d3811b1a156a6e8f2fa5be8cc16",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--quick",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Quick"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--quick",
+        "stableId": "keyword--quick",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "1285b88da340da392c9e4721dfcabc16d4db9d3811b1a156a6e8f2fa5be8cc16",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "be95e98a0f76de8f",
+    "name": "Rage",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability can be used while in Rage Stance.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "cede90999fc8ea5687572ef65c9fc5d16db4bccfba2ac7eda642a704a63f856e",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--rage",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Rage"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--rage",
+        "stableId": "keyword--rage",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "cede90999fc8ea5687572ef65c9fc5d16db4bccfba2ac7eda642a704a63f856e",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "85e41c3771f1a638",
+    "name": "Rapid",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability can be used more than once per turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "c051e78adc1e5d156b210f9ba6507537b70329565dd048b877eb263b91e920b9",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--rapid",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Rapid"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--rapid",
+        "stableId": "keyword--rapid",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "c051e78adc1e5d156b210f9ba6507537b70329565dd048b877eb263b91e920b9",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "7eb5d82a60970434",
+    "name": "Regrowth",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You heal for 3+Focus (of the one who applied it) at the start of your turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "898211b6f2c3d4ccef24968c6cbaa4969961e58db8186967b1414232ac4ef0db",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--regrowth",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Regrowth"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--regrowth",
+        "stableId": "keyword--regrowth",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "898211b6f2c3d4ccef24968c6cbaa4969961e58db8186967b1414232ac4ef0db",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "15074690f288b96f",
+    "name": "Root",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You cannot move and your evasion when taking the Dodge reaction is changed to 13 + Agility (rounded down)</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "f252b010b756d916871c2ed1a79364ff032963c3c3dd3f33a0dbd678f89afe87",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--root",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Root"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--root",
+        "stableId": "keyword--root",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "f252b010b756d916871c2ed1a79364ff032963c3c3dd3f33a0dbd678f89afe87",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "551379845b01517e",
+    "name": "Safe",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This spell and/or attack does not provoke attacks of opportunity as result of being a spell or ranged attack.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "b9fc552f94607b4c875dc2127bd9f056e79ccb0bcd69395638a805bbd7e576b5",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--safe",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Safe"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--safe",
+        "stableId": "keyword--safe",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "b9fc552f94607b4c875dc2127bd9f056e79ccb0bcd69395638a805bbd7e576b5",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "de8c18fe538e474c",
+    "name": "Salvo",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>All attacks in a Salvo attack are rolled at the same time. An enemy reacting to 1 of the attacks with a basic Dodge or Block may use that same reaction against the other attacks in the salvo at no additional cost. Any effects tied to these reactions (such as healing on block) only applies once, and salvo attacks only provoke 1 attack of opportunity.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "dc0edba1816b2b8edc462d2ad116852207d24ce54e06edec50e9d8cb7c63eda4",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--salvo",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Salvo"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--salvo",
+        "stableId": "keyword--salvo",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "dc0edba1816b2b8edc462d2ad116852207d24ce54e06edec50e9d8cb7c63eda4",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "6f4570798e6f7e41",
+    "name": "Sanctify",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Attacks against you that hit heal an enemy attacker by 3+the applier's focus. After this triggers, the stacks of this debuff are reduced by 1.</p><p>An attacker at full HP may choose not to trigger the effect.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "1796c1c59f6741bf63833cffecb78e7bb34e96b043d4a7ae885acbaf017d792e",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--sanctify",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Sanctify"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--sanctify",
+        "stableId": "keyword--sanctify",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "1796c1c59f6741bf63833cffecb78e7bb34e96b043d4a7ae885acbaf017d792e",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "a11be599ce6235b5",
+    "name": "Scatter",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>When you make an attack against multiple targets with this ability, roll a separate accuracy and damage check against each target.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "5d16bcdada47d0db81e33e4b356fa6119d920d67d7e91a74c11a7609e1609c57",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--scatter",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Scatter"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--scatter",
+        "stableId": "keyword--scatter",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "5d16bcdada47d0db81e33e4b356fa6119d920d67d7e91a74c11a7609e1609c57",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "ec01bc8aff81e42a",
+    "name": "Secret Art",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You can only use 1 ability with this keyword or with the Esoteric Art keyword per encounter.&nbsp;</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ff30e8ca3dd1e155306a668e81fc1fd31b25a1255875c471e097ced37dc15439",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--secret-art",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Secret Art"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--secret-art",
+        "stableId": "keyword--secret-art",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ff30e8ca3dd1e155306a668e81fc1fd31b25a1255875c471e097ced37dc15439",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "4b344cc298472627",
+    "name": "Setup",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Setup attacks can be completed by spending AP in the following turn. While charging the attack, no other AP actions can be taken and attacks against you gain the Trick Attack keyword. You may cancel a setup attack instead of finishing it and don't need to spend the remaining AP. Setup attacks cannot activate before the start of your next turn and you cannot use the Prepare action on Setup abilities. You may cancel a setup attack at any time by spending 0 RP. You must spend at least 1 AP to begin charging a setup attack.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "bb645fd580e6adb0489a406cd26b60b70a9dc4a13be7963b5286e15bd1a66c15",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--setup",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Setup"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--setup",
+        "stableId": "keyword--setup",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "bb645fd580e6adb0489a406cd26b60b70a9dc4a13be7963b5286e15bd1a66c15",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "c09dac1057952d84",
+    "name": "Shaken",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The target's maximum AP is reduced by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "9834b9726f604c0b008a0d86065da95d3f3af35bafe26e8d44bdc8a0b2933c52",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--shaken",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Shaken"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--shaken",
+        "stableId": "keyword--shaken",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "9834b9726f604c0b008a0d86065da95d3f3af35bafe26e8d44bdc8a0b2933c52",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "d44cbd2302a348a1",
+    "name": "Shieldbreaker",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This attack deals double damage to the HP of Shields and Temporary HP. Any carryover damage is not doubled.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "45293ef08b956c7f73f8666a9fef71b2040b102b2611b28d0932d386da9c953c",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--shieldbreaker",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Shieldbreaker"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--shieldbreaker",
+        "stableId": "keyword--shieldbreaker",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "45293ef08b956c7f73f8666a9fef71b2040b102b2611b28d0932d386da9c953c",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b2cf433e70bd1254",
+    "name": "Sickened",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>When making a roll that uses Focus, Power, Agility or Toughness, they are treated as 1 lower.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "b8f4c4a5886d9cbe66560d8a0c0716336139ecec81e520451a3c23f2d7f27297",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--sickened",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Sickened"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--sickened",
+        "stableId": "keyword--sickened",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "b8f4c4a5886d9cbe66560d8a0c0716336139ecec81e520451a3c23f2d7f27297",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "c4509a17b3f17a05",
+    "name": "Sidestep",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Your movement does not provoke attacks of opportunities.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "8fa6565f92118bab81017f171a956be155e63a5b1672bd6b5ba47a412469f90f",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--sidestep",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Sidestep"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--sidestep",
+        "stableId": "keyword--sidestep",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "8fa6565f92118bab81017f171a956be155e63a5b1672bd6b5ba47a412469f90f",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "3b30eb8817ef8edc",
+    "name": "Slow",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Your movement speed is halved.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "86cc7368488575a1314ab29825f40d8cb083a477feea72e4e6c9ccb9ea7a1ce4",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--slow",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Slow"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--slow",
+        "stableId": "keyword--slow",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "86cc7368488575a1314ab29825f40d8cb083a477feea72e4e6c9ccb9ea7a1ce4",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "3d7a9e1e07f30f86",
+    "name": "Soaked",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A soaked target takes X additional damage when taking Lighting damage.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "c96623920f89e23937f20b5312c1d28d9593202e8f8922b710675c7a48ce6307",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--soaked",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Soaked"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--soaked",
+        "stableId": "keyword--soaked",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "c96623920f89e23937f20b5312c1d28d9593202e8f8922b710675c7a48ce6307",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "4a61bc503f7d6e31",
+    "name": "Song",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A character can only have 1 Song active at the same time.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ac410d74ac8e1e3166f965700caa3c9f1e623f7fe1a4deade8259a4cd755cb63",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--song",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Song"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--song",
+        "stableId": "keyword--song",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ac410d74ac8e1e3166f965700caa3c9f1e623f7fe1a4deade8259a4cd755cb63",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "a49871d8686c8f68",
+    "name": "Sound",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability's effect is based around sound. Those who can't hear it are unaffected.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "26144621d841b6825b1d2ffe6cbd39d814025027b3df2a04d34c2a25c10e54c2",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--sound",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Sound"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--sound",
+        "stableId": "keyword--sound",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "26144621d841b6825b1d2ffe6cbd39d814025027b3df2a04d34c2a25c10e54c2",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "e9c7c9e4267bcf42",
+    "name": "Spell",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability is considered a spell. Unless stated otherwise, it will provoke attacks of opportunity.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "e39bfccaad2835bffd844e0bedcf1be96bb2451bb8beeec0645761294f76ec26",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--spell",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Spell"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--spell",
+        "stableId": "keyword--spell",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "e39bfccaad2835bffd844e0bedcf1be96bb2451bb8beeec0645761294f76ec26",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "314d8c5f2091f0ec",
+    "name": "Stacking",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Abilities with this keyword give stacks of something. You can only gain stacks of 1 thing with this keyword a the same time. Upon gaining a stack of a different kind, your original stacks are lost.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "76acaa011dde27b2c79dd1662349bee453feec844947210e4cbff2658adc3555",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--stacking",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Stacking"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--stacking",
+        "stableId": "keyword--stacking",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "76acaa011dde27b2c79dd1662349bee453feec844947210e4cbff2658adc3555",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9d12ff331b7468a2",
+    "name": "Stagger",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A character inflicted with Stagger has their evasion reduced by X, where X is the Stagger value.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "45ed4bea6ed5c1baae9e981d7726e5bc7558db0f69801801f430fc5afdfd8c74",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--stagger",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Stagger"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--stagger",
+        "stableId": "keyword--stagger",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "45ed4bea6ed5c1baae9e981d7726e5bc7558db0f69801801f430fc5afdfd8c74",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "554abae9c7b1863a",
+    "name": "Stance",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Only 1 Stance ability can be active at the same time.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "a62a867c09f904522c52798fd43f6c935b9dced119ebf72bc3da467e1ecc24b0",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--stance",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Stance"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--stance",
+        "stableId": "keyword--stance",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "a62a867c09f904522c52798fd43f6c935b9dced119ebf72bc3da467e1ecc24b0",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "c017e3a048022ca0",
+    "name": "Static",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>At the end of your next turn, you deal X lightning damage to all allies within 5ft of you.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ac07ef05a5fee89e0afc97eb1dc70b746e5652e8136ba0f69bb780d8397ee5d9",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--static",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Static"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--static",
+        "stableId": "keyword--static",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ac07ef05a5fee89e0afc97eb1dc70b746e5652e8136ba0f69bb780d8397ee5d9",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "5940cc94e06a325c",
+    "name": "Stealth",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability does not pull you out of Hiding. You must still be in low cover or concealment after using this ability to remain in Hiding.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "69316309014f68dd26df67e6636a0afbe00782e3324877c231b73c6c234795f1",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--stealth",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Stealth"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--stealth",
+        "stableId": "keyword--stealth",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "69316309014f68dd26df67e6636a0afbe00782e3324877c231b73c6c234795f1",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "9b2546e99dc2acd8",
+    "name": "Strafe",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You must have moved at least the Strafe distance towards the target before making an attack with this keyword.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "927dca32ef5a443bf026669ddf6f4cde8077afd7dfb6bd744cdcdc39e7b3cad1",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--strafe",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Strafe"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--strafe",
+        "stableId": "keyword--strafe",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "927dca32ef5a443bf026669ddf6f4cde8077afd7dfb6bd744cdcdc39e7b3cad1",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "e4879541cd291983",
+    "name": "Stun",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Your AP, AP recovery and RP is set to 0 when afflicted by this. When it ends, you regain any unused RP lost from this effect.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "4ef445063e21e575dde85098f41071947833a7820b36b770475262880d69e276",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--stun",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Stun"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--stun",
+        "stableId": "keyword--stun",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "4ef445063e21e575dde85098f41071947833a7820b36b770475262880d69e276",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "c35aa78918e5612f",
+    "name": "Summon",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability counts towards your maximum summon limit. You can only have 2 summons active at the same time.</p><p>A summon does not count as a valid target for abilities that require a ‘willing’ ally.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "d5e995cb2721fd9b6ffd292498fec29dd7d9cf83f7db9a822598e8b6d0bff235",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--summon",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Summon"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--summon",
+        "stableId": "keyword--summon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "d5e995cb2721fd9b6ffd292498fec29dd7d9cf83f7db9a822598e8b6d0bff235",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "34aeedee0cfe7f2b",
+    "name": "Sunder",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A character inflicted with Sunder has their guard reduced by X, where X is the Sunder value.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "068eca34216cbea8c1b5aea22d4b169c62a7645e5071e0e074e3ad04876335c7",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--sunder",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Sunder"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--sunder",
+        "stableId": "keyword--sunder",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "068eca34216cbea8c1b5aea22d4b169c62a7645e5071e0e074e3ad04876335c7",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "a7a87b0853b52472",
+    "name": "Sure Hit",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Sure hit attacks always hit and do not require an accuracy roll, but they automatically miss against targets with full cover.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "4a9dfc1200796273c4039f699eb81ed8ca3209bf3666ae8b7fabbd32bf6f31e7",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--sure-hit",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Sure Hit"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--sure-hit",
+        "stableId": "keyword--sure-hit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "4a9dfc1200796273c4039f699eb81ed8ca3209bf3666ae8b7fabbd32bf6f31e7",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "0d293d1454af368f",
+    "name": "Teleport",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You teleport instead of moving normally. Teleportation does not provoke Attacks of Opportunity and ignores most forms of roots and grapples. You need to see where you teleport to, but can otherwise ignore difficult terrain and solid objects in the way. Unless stated otherwise, you only move yourself and your belongings when teleporting, not other creatures you might be touching.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "ce6aa8e8ba8f1657c49a1c93ce71fd7f0fc706c88def4a0f6e1d0d9d71483ebe",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--teleport",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Teleport"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--teleport",
+        "stableId": "keyword--teleport",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "ce6aa8e8ba8f1657c49a1c93ce71fd7f0fc706c88def4a0f6e1d0d9d71483ebe",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "e0a5eb25946bae3d",
+    "name": "Toxic",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>A character suffering from Toxic takes 1d6 Full Pierce Poison damage at the start of their turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "206f990abc533c289e909b90d094ca386d001f81901427e3aea7bf248b31e1d4",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--toxic",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Toxic"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--toxic",
+        "stableId": "keyword--toxic",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "206f990abc533c289e909b90d094ca386d001f81901427e3aea7bf248b31e1d4",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "36abde915930e9b5",
+    "name": "Transformation",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You can only have one transformation effect active at one time.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "4d647222624a57535f44517a06681884f466e8393395e94bd3a63f050a247738",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--transformation",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Transformation"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--transformation",
+        "stableId": "keyword--transformation",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "4d647222624a57535f44517a06681884f466e8393395e94bd3a63f050a247738",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "382a9be0bfcb5f38",
+    "name": "Trick Attack",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>The target of the attack must spend double RP to react to a Trick Attack.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "e1eb243e3da6c4dc2505f9a624f9488e5862c4f371c8eaf12711f2bce616e9ca",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--trick-attack",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Trick Attack"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--trick-attack",
+        "stableId": "keyword--trick-attack",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "e1eb243e3da6c4dc2505f9a624f9488e5862c4f371c8eaf12711f2bce616e9ca",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "6dc46c3925a84cd5",
+    "name": "Type",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You can only be 1 ‘type’ at the same time.&nbsp;</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "8625403a5fbcafd1fc6ba040473b8932a2f45b20f125ff9ed62040b191f0effa",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--type",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Type"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--type",
+        "stableId": "keyword--type",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "8625403a5fbcafd1fc6ba040473b8932a2f45b20f125ff9ed62040b191f0effa",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "84a03b3fc8ec2f16",
+    "name": "Unarmed Strike",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>This ability must be made with an unarmed attack.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "e356b21de2ca831e419aff7b56309ebf6978cf09dcef077381bdf1dcd03df1f2",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--unarmed-strike",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Unarmed Strike"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--unarmed-strike",
+        "stableId": "keyword--unarmed-strike",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "e356b21de2ca831e419aff7b56309ebf6978cf09dcef077381bdf1dcd03df1f2",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "78391cff9a37847d",
+    "name": "Unbalanced",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Your next attack that costs AP (even 0 AP) costs 1 extra AP.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "a76e678aee55c49bb10ba3bd00acafe4d1b7c8ad3a68be02bb0db4b7e5edba55",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--unbalanced",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Unbalanced"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--unbalanced",
+        "stableId": "keyword--unbalanced",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "a76e678aee55c49bb10ba3bd00acafe4d1b7c8ad3a68be02bb0db4b7e5edba55",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "16d58dd7cd324f1c",
+    "name": "Upkeep",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>You may choose to pay the cost at the beginning of your turn. If you don't, the effect is terminated.</p><p>While downed, you cannot pay upkeep.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "6e8224b7e02c38695c0b457aef1e66a771482e74f5ed27319403a902e5ad7942",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--upkeep",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Upkeep"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--upkeep",
+        "stableId": "keyword--upkeep",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "6e8224b7e02c38695c0b457aef1e66a771482e74f5ed27319403a902e5ad7942",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "98b66d33b2a82e20",
+    "name": "Weakened",
+    "type": "keyword",
+    "img": "icons/svg/aura.svg",
+    "system": {
+      "description": "<p>Your maximum AP goes down to 2 and maximum RP goes down to 1. When it ends, you regain any unused RP lost from this effect.</p>",
+      "source": "The Lyrian Chronicles v0.13.2",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+      "sourceHash": "eaaf8c3b1e385dc4bedcc631f5a62ade9fd48cf072b0f716eb69f5e803b47962",
+      "rulebookVersion": "0.13.2",
+      "stableId": "keyword--weakened",
+      "relationships": {
+        "_links": []
+      },
+      "keyword": "Weakened"
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:keyword--weakened",
+        "stableId": "keyword--weakened",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/keywords",
+        "sourceHash": "eaaf8c3b1e385dc4bedcc631f5a62ade9fd48cf072b0f716eb69f5e803b47962",
+        "rulebookVersion": "0.13.2",
+        "contentBuild": "0.5.0"
+      }
+    }
+  }
+]
