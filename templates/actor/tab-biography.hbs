@@ -1,0 +1,31 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="biography" data-group="primary" data-application-part="biography">
+  <h2 class="lyr-heading">{{localize "LYRIAN.UI.Biography"}}</h2>
+  {{#if editable}}
+    {{formInput systemFields.biography value=system.biography enriched=enrichedBiography toggled=true}}
+  {{else}}
+    <div class="lyr-rich-text">{{{enrichedBiography}}}</div>
+  {{/if}}
+
+  {{#if isNPC}}
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.Tactics"}}</h2>
+    {{#if editable}}
+      {{formInput systemFields.tactics value=system.tactics enriched=enrichedTactics toggled=true}}
+    {{else}}
+      <div class="lyr-rich-text">{{{enrichedTactics}}}</div>
+    {{/if}}
+
+    {{#if enrichedRunningMonster}}
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.RunningMonster"}}</h2>
+      {{#if editable}}
+        {{formInput systemFields.runningMonster value=system.runningMonster enriched=enrichedRunningMonster toggled=true}}
+      {{else}}
+        <div class="lyr-rich-text">{{{enrichedRunningMonster}}}</div>
+      {{/if}}
+    {{/if}}
+
+    {{#if editable}}
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.GatherableParts"}}</h2>
+      <input type="text" name="system.gatherables" value="{{system.gatherables}}" placeholder="{{localize "LYRIAN.Placeholder.Gatherables"}}" />
+    {{/if}}
+  {{/if}}
+</section>
