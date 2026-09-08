@@ -1,0 +1,349 @@
+<div class="lyr-creation-body">
+
+  <nav class="lyr-steps">
+    {{#each (array "race" "classes" "breakthroughs" "stats" "equipment" "review") as |id|}}
+      <button type="button" class="lyr-step-btn {{#if (eq ../state.step id)}}is-active{{/if}}"
+              data-action="goStep" data-step="{{id}}">{{localize (concat "LYRIAN.Creation.Step." id)}}</button>
+    {{/each}}
+  </nav>
+
+  {{#if (eq state.step "race")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.Race"}}</h2>
+      {{#if races.length}}
+        <div class="lyr-pick-grid">
+          <label class="lyr-pick {{#if hybridMode}}is-picked{{/if}}">
+            <input type="radio" name="raceMode" value="hybrid" {{#if hybridMode}}checked{{/if}} />
+            <img src="icons/svg/mystery-man.svg" alt="" />
+            <span>{{localize "LYRIAN.Hybrid.Name"}}</span>
+          </label>
+          {{#each races as |race|}}
+            <label class="lyr-pick {{#unless ../hybridMode}}{{#if (eq ../state.raceId race.id)}}is-picked{{/if}}{{/unless}}">
+              <input type="radio" name="raceId" value="{{race.id}}" {{#unless ../hybridMode}}{{#if (eq ../state.raceId race.id)}}checked{{/if}}{{/unless}} />
+              <img src="{{race.img}}" alt="" />
+              <span>{{race.name}}</span>
+            </label>
+          {{/each}}
+        </div>
+
+        {{#if hybridMode}}
+          <h3 class="lyr-subheading">{{localize "LYRIAN.Hybrid.ChooseType"}}</h3>
+          <p class="lyr-note">{{localize "LYRIAN.Hybrid.CostHint" cost=hybridCost budget=state.breakthroughBudget}}</p>
+          <div class="lyr-pick-grid">
+            {{#each hybridChoices as |choice|}}
+              <label class="lyr-pick {{#if (eq ../state.hybridType choice.key)}}is-picked{{/if}}">
+                <input type="radio" name="hybridType" value="{{choice.key}}"
+                       data-breakthrough-id="{{choice.breakthroughId}}"
+                       data-fixed-primary-id="{{choice.fixedPrimaryId}}"
+                       {{#if (eq ../state.hybridType choice.key)}}checked{{/if}}
+                       {{#unless choice.breakthroughId}}disabled{{/unless}} />
+                <span>{{choice.displayName}}</span>
+                <small>{{localize "LYRIAN.UI.ExpAmount" exp=choice.cost}}</small>
+                {{#if choice.description}}<div class="lyr-pick__description">{{{choice.description}}}</div>{{/if}}
+              </label>
+            {{/each}}
+          </div>
+
+          {{#if (eq state.hybridType "faerieChimera")}}
+            <h3 class="lyr-subheading">{{localize "LYRIAN.Hybrid.ChoosePrimary"}}</h3>
+            <p class="lyr-note">{{localize "LYRIAN.Hybrid.PrimaryHint"}}</p>
+            <div class="lyr-pick-grid">
+              {{#each hybridPrimaryOptions as |race|}}
+                <label class="lyr-pick {{#if (eq ../state.raceId race.id)}}is-picked{{/if}}">
+                  <input type="radio" name="hybridPrimaryRaceId" value="{{race.id}}"
+                         {{#if (eq ../state.raceId race.id)}}checked{{/if}} />
+                  <img src="{{race.img}}" alt="" />
+                  <span>{{race.name}} ({{localize "LYRIAN.UI.PrimaryRace"}})</span>
+                </label>
+              {{/each}}
+            </div>
+          {{/if}}
+        {{/if}}
+
+        {{#if selectedRace}}
+          <div class="lyr-choice-summary">
+            {{#if hybridMode}}
+              <p><strong>{{localize "LYRIAN.Hybrid.Selected"}}:</strong> {{selectedHybridBreakthrough.name}}</p>
+              <p><strong>{{localize "LYRIAN.UI.Remaining"}}:</strong> {{localize "LYRIAN.UI.ExpAmount" exp=hybridBudgetRemaining}}</p>
+              {{#if (eq state.hybridType "humanChimera")}}
+                <p class="lyr-warn">{{localize "LYRIAN.Hybrid.HumanException"}}</p>
+              {{/if}}
+            {{/if}}
+            {{#if selectedRace.system.attributes}}<p><strong>{{localize "LYRIAN.UI.Attributes"}}:</strong> {{selectedRace.system.attributes}}</p>{{/if}}
+            {{#if showRaceAmbition}}<p><strong>{{localize "LYRIAN.UI.Ambition"}}:</strong> {{selectedRace.system.ambition}}</p>{{/if}}
+          </div>
+
+          {{#if raceNeedsMainChoice}}
+            <label class="lyr-assign">{{localize "LYRIAN.Creation.ChooseMainStat"}}
+              <select name="raceMainChoice">
+                <option value="">— {{localize "LYRIAN.Action.Choose"}} —</option>
+                {{#each mainStatChoices as |choice|}}<option value="{{choice.key}}" {{#if (eq ../state.raceMainChoice choice.key)}}selected{{/if}}>{{choice.label}}</option>{{/each}}
+              </select>
+            </label>
+          {{/if}}
+          {{#if raceNeedsSubChoice}}
+            <label class="lyr-assign">{{localize "LYRIAN.Creation.ChooseSubStat"}}
+              <select name="raceSubChoice">
+                <option value="">— {{localize "LYRIAN.Action.Choose"}} —</option>
+                {{#each subStatChoices as |choice|}}<option value="{{choice.key}}" {{#if (eq ../state.raceSubChoice choice.key)}}selected{{/if}}>{{choice.label}}</option>{{/each}}
+              </select>
+            </label>
+          {{/if}}
+
+          {{#if ancestries.length}}
+            <h3 class="lyr-subheading">{{localize "LYRIAN.Creation.SubraceAncestry"}}</h3>
+            <div class="lyr-pick-grid">
+              {{#each ancestries as |race|}}
+                <label class="lyr-pick {{#if (eq ../state.ancestryId race.id)}}is-picked{{/if}}">
+                  <input type="radio" name="ancestryId" value="{{race.id}}" {{#if (eq ../state.ancestryId race.id)}}checked{{/if}} />
+                  <img src="{{race.img}}" alt="" /><span>{{race.name}}</span>
+                </label>
+              {{/each}}
+            </div>
+          {{/if}}
+
+          {{#if raceVariants.length}}
+            <label class="lyr-assign">{{localize "LYRIAN.Creation.DemonHouse"}}
+              <select name="raceVariant">
+                <option value="">— {{localize "LYRIAN.Action.Choose"}} —</option>
+                {{#each raceVariants as |choice|}}<option value="{{choice.key}}" {{#if (eq ../state.raceVariant choice.key)}}selected{{/if}}>{{choice.name}} — {{choice.description}}</option>{{/each}}
+              </select>
+            </label>
+          {{/if}}
+        {{/if}}
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyRaces"}}</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "classes")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingClass"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.StartingBudget" classExp=config.progression.startingClassExp breakthroughExp=config.progression.startingBreakthroughExp classCost=config.progression.classCostPerTier}}</p>
+      {{#if classes.length}}
+        <input type="search" class="lyr-search" data-search-list="classes"
+               placeholder="{{localize "LYRIAN.Creation.SearchClasses"}}"
+               aria-label="{{localize "LYRIAN.Creation.SearchClasses"}}" />
+        <div data-search-scope="classes">
+          {{#each classGroups as |group|}}
+            <div data-search-group>
+              <h3 class="lyr-subheading">{{localize "LYRIAN.Creation.ClassTier" tier=group.tier}}</h3>
+              <div class="lyr-pick-grid">
+                {{#each group.classes as |cls|}}
+                  <label class="lyr-pick {{#if (eq @root.state.classId cls.id)}}is-picked{{/if}}"
+                         data-search-name="{{cls.name}}">
+                    <input type="radio" name="classId" value="{{cls.id}}" {{#if (eq @root.state.classId cls.id)}}checked{{/if}} />
+                    <img src="{{cls.img}}" alt="" />
+                    <span>{{cls.name}}</span>
+                  </label>
+                {{/each}}
+              </div>
+            </div>
+          {{/each}}
+          <p class="lyr-empty is-filtered" data-search-empty>{{localize "LYRIAN.Creation.NoSearchMatches"}}</p>
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyClasses"}}</p>
+      {{/if}}
+      {{#if selectedClass}}
+        <div class="lyr-choice-summary">
+          <p><strong>{{selectedClass.name}}</strong></p>
+          <label class="lyr-assign">{{localize "LYRIAN.Creation.ClassLevel"}}
+            <select name="classLevel">
+              {{#each classLevels as |choice|}}
+                <option value="{{choice.level}}" {{#if (eq ../classLevel choice.level)}}selected{{/if}} {{#unless choice.affordable}}disabled{{/unless}}>
+                  {{localize "LYRIAN.Creation.ClassLevelOption" level=choice.level cost=choice.cost}}
+                </option>
+              {{/each}}
+            </select>
+          </label>
+          <p>{{localize "LYRIAN.Creation.ClassBudget" spent=classCost remaining=classExpLeft total=state.expBudget}}</p>
+        </div>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "breakthroughs")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingBreakthroughs"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.BreakthroughBudget" remaining=breakthroughExpLeft total=state.breakthroughBudget}}</p>
+      {{#if hybridMode}}
+        <div class="lyr-choice-summary">
+          <p><strong>{{localize "LYRIAN.Hybrid.Selected"}}:</strong> {{selectedHybridBreakthrough.name}}</p>
+          <p>{{localize "LYRIAN.UI.ExpAmount" exp=hybridCost}}</p>
+        </div>
+      {{/if}}
+      {{#if breakthroughs.length}}
+        <input type="search" class="lyr-search" data-search-list="breakthroughs"
+               placeholder="{{localize "LYRIAN.Creation.SearchBreakthroughs"}}"
+               aria-label="{{localize "LYRIAN.Creation.SearchBreakthroughs"}}" />
+        <div data-search-scope="breakthroughs">
+        <div class="lyr-pick-grid">
+          {{#each breakthroughs as |entry|}}
+            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}" data-search-name="{{entry.name}}">
+              <img src="{{entry.img}}" alt="" />
+              <span>{{entry.name}}</span>
+              <small>{{localize "LYRIAN.UI.ExpAmount" exp=entry.cost}}</small>
+              <button type="button" data-action="toggleBreakthrough" data-id="{{entry.id}}" data-cost="{{entry.cost}}">
+                {{#if entry.selected}}{{localize "LYRIAN.Creation.Remove"}}{{else}}{{localize "LYRIAN.Creation.Add"}}{{/if}}
+              </button>
+            </article>
+          {{/each}}
+        </div>
+        <p class="lyr-empty is-filtered" data-search-empty>{{localize "LYRIAN.Creation.NoSearchMatches"}}</p>
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyBreakthroughs"}}</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "stats")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.MainStats"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.AssignMain" values=mainArray}}</p>
+      <div class="lyr-assign-grid">
+        {{#each mainStats as |stat|}}
+          <label class="lyr-assign">
+            <span>{{stat.label}}</span>
+            <select name="mainAssign.{{stat.key}}">
+              <option value="">—</option>
+              {{#each stat.options as |v|}}
+                <option value="{{v}}" {{#if (eq stat.assigned v)}}selected{{/if}}>{{v}}</option>
+              {{/each}}
+            </select>
+          </label>
+        {{/each}}
+      </div>
+
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.SubStats"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.AssignSub" values=subArray}}</p>
+      <div class="lyr-assign-grid">
+        {{#each subStats as |stat|}}
+          <label class="lyr-assign">
+            <span>{{stat.label}}</span>
+            <select name="subAssign.{{stat.key}}">
+              <option value="">—</option>
+              {{#each stat.options as |v|}}
+                <option value="{{v}}" {{#if (eq stat.assigned v)}}selected{{/if}}>{{v}}</option>
+              {{/each}}
+            </select>
+          </label>
+        {{/each}}
+      </div>
+      {{#if statsComplete}}<p class="lyr-ok">{{localize "LYRIAN.Creation.StatsAssigned"}}</p>{{/if}}
+    
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.SkillPoints"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.SkillsInsideStats"}}</p>
+      <p class="lyr-note">{{localize "LYRIAN.UI.Remaining"}}: <strong class="lyr-budget">{{skillPointsLeft}}</strong> {{localize "LYRIAN.UI.OfTotal" total=state.skillPoints}}</p>
+      <div class="lyr-skill-buy">
+        {{#each skills as |skill|}}
+          <div class="lyr-skill-buy__row">
+            <span class="lyr-skill-buy__name">{{skill.label}}</span>
+            <span class="lyr-skill-buy__stat">{{skill.stat}}</span>
+            <button type="button" class="lyr-step" data-action="adjustSkill" data-skill="{{skill.key}}" data-delta="-1">&minus;</button>
+            <span class="lyr-skill-buy__rank">{{skill.ranks}}</span>
+            <button type="button" class="lyr-step" data-action="adjustSkill" data-skill="{{skill.key}}" data-delta="1">+</button>
+          </div>
+        {{/each}}
+      </div>
+
+      {{#each raceSkillPools as |pool|}}
+        <h3 class="lyr-subheading">{{localize "LYRIAN.Creation.RaceSkillBonus" race=pool.race.name}}</h3>
+        <p class="lyr-note">{{localize "LYRIAN.Creation.AllocateRaceSkills" points=pool.points}} {{localize "LYRIAN.UI.Remaining"}}: <strong class="lyr-budget">{{pool.remaining}}</strong></p>
+        <div class="lyr-skill-buy">
+          {{#each pool.skills as |skill|}}
+            <div class="lyr-skill-buy__row">
+              <span class="lyr-skill-buy__name">{{skill.label}}</span>
+              <span class="lyr-skill-buy__stat">{{localize "LYRIAN.Creation.RacialBonus"}}</span>
+              <button type="button" class="lyr-step" data-action="adjustRaceSkill"
+                      data-race-id="{{pool.race.id}}" data-skill="{{skill.key}}"
+                      data-maximum="{{pool.points}}" data-delta="-1">&minus;</button>
+              <span class="lyr-skill-buy__rank">{{skill.ranks}}</span>
+              <button type="button" class="lyr-step" data-action="adjustRaceSkill"
+                      data-race-id="{{pool.race.id}}" data-skill="{{skill.key}}"
+                      data-maximum="{{pool.points}}" data-delta="1">+</button>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+    
+</section>
+  {{/if}}
+
+  {{#if (eq state.step "equipment")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingEquipment"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.EquipmentBudget" remaining=equipmentClimLeft total=config.progression.startingClim}}</p>
+      {{#if equipment.length}}
+        <input type="search" class="lyr-search" data-search-list="equipment"
+               placeholder="{{localize "LYRIAN.Creation.SearchEquipment"}}"
+               aria-label="{{localize "LYRIAN.Creation.SearchEquipment"}}" />
+        <div data-search-scope="equipment">
+        <div class="lyr-pick-grid">
+          {{#each equipment as |entry|}}
+            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}" data-search-name="{{entry.name}}">
+              <img src="{{entry.img}}" alt="" />
+              <span>{{entry.name}}</span>
+              <small>{{localize "LYRIAN.Creation.EquipmentCost" cost=entry.cost burden=entry.burden}}</small>
+              <button type="button" data-action="toggleEquipment" data-key="{{entry.key}}" data-cost="{{entry.cost}}">
+                {{#if entry.selected}}{{localize "LYRIAN.Creation.Remove"}}{{else}}{{localize "LYRIAN.Creation.Add"}}{{/if}}
+              </button>
+            </article>
+          {{/each}}
+        </div>
+        <p class="lyr-empty is-filtered" data-search-empty>{{localize "LYRIAN.Creation.NoSearchMatches"}}</p>
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyEquipment"}}</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "review")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.Review"}}</h2>
+      <div class="lyr-choice-summary">
+        <p><strong>{{localize "LYRIAN.UI.Race"}}:</strong> {{selectedRace.name}}{{#if selectedAncestry}} — {{selectedAncestry.name}}{{/if}}</p>
+        <p><strong>{{localize "LYRIAN.UI.Classes"}}:</strong> {{selectedClass.name}} — {{localize "LYRIAN.Creation.LevelValue" level=classLevel}} · {{localize "LYRIAN.UI.ExpAmount" exp=classCost}}</p>
+        <p><strong>{{localize "LYRIAN.UI.Breakthroughs"}}:</strong> {{selectedBreakthroughs.length}} · {{localize "LYRIAN.UI.ExpAmount" exp=breakthroughExpSpent}}</p>
+        <p><strong>{{localize "LYRIAN.Creation.SkillPoints"}}:</strong> {{skillPointsLeft}} {{localize "LYRIAN.UI.Remaining"}}</p>
+        <p><strong>{{localize "LYRIAN.UI.EquipmentDetails"}}:</strong> {{selectedEquipment.length}} · {{equipmentSpent}} {{localize "LYRIAN.UI.Clim"}}</p>
+        <p><strong>{{localize "LYRIAN.Creation.StartingClimRemaining"}}:</strong> {{equipmentClimLeft}}</p>
+      </div>
+      {{#if selectedEquipment.length}}
+        <div class="lyr-skill-buy">
+          {{#each selectedEquipment as |entry|}}
+            <div class="lyr-skill-buy__row">
+              <span class="lyr-skill-buy__name">{{entry.name}}</span>
+              <span>{{entry.cost}} {{localize "LYRIAN.UI.Clim"}}</span>
+            </div>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.NoEquipmentSelected"}}</p>
+      {{/if}}
+      <h3 class="lyr-subheading">{{localize "LYRIAN.Creation.Readiness"}}</h3>
+      <div class="lyr-skill-buy">
+        {{#each creationChecks as |check|}}
+          <div class="lyr-skill-buy__row">
+            <span class="lyr-skill-buy__name">{{check.label}}</span>
+            <span class="{{#if check.complete}}lyr-ok{{else}}lyr-warn{{/if}}">
+              {{#if check.complete}}{{localize "LYRIAN.Creation.Complete"}}{{else}}{{localize "LYRIAN.Creation.Missing"}}{{/if}}
+            </span>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+  {{/if}}
+
+  <footer class="lyr-creation-footer">
+    <button type="button" data-action="reset">{{localize "LYRIAN.Action.Reset"}}</button>
+    {{#if (eq state.step "review")}}
+      <button type="button" class="lyr-primary" data-action="finish">
+        {{localize "LYRIAN.Action.ApplyToSheet"}}
+      </button>
+    {{/if}}
+  </footer>
+</div>
