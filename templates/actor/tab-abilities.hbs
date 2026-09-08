@@ -1,0 +1,95 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="abilities" data-group="primary" data-application-part="abilities">
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.Abilities"}}</h2>
+    <div class="lyr-section-actions">
+      <button type="button" data-action="browsePack" data-pack="{{#if isNPC}}monster-abilities{{else}}player-abilities{{/if}}"><i class="fa-solid fa-book-open"></i> {{localize "LYRIAN.Action.BrowseCompendium"}}</button>
+      <button type="button" data-action="createItem" data-type="{{#if isNPC}}monsterAbility{{else}}ability{{/if}}">{{localize "LYRIAN.Action.AddAbility"}}</button>
+    </div>
+  </div>
+  <p class="lyr-note">{{localize "LYRIAN.Hint.AbilityDrop"}}</p>
+
+  {{#*inline "abilityRow"}}
+    <li class="lyr-row {{#if this.system.usedThisRound}}lyr-row--spent{{/if}}" data-item-id="{{this.id}}">
+      <img class="lyr-row__icon" src="{{this.img}}" alt="" />
+      <div class="lyr-row__body">
+        <span class="lyr-row__name">{{this.name}}</span>
+        <span class="lyr-row__meta">
+          {{this.system.costLabel}}
+          {{#if this.system.range}} · {{this.system.range}}{{/if}}
+          {{#if this.system.requirement}} · {{localize "LYRIAN.UI.Requires"}} {{this.system.requirement}}{{/if}}
+        </span>
+      </div>
+      <div class="lyr-row__actions">
+        <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Use"}}</button>
+        <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+        <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+      </div>
+    </li>
+  {{/inline}}
+
+  {{#*inline "grantRow"}}
+    <li class="lyr-feature-row" data-item-id="{{item.id}}">
+      {{#if requiredLevel}}<span class="lyr-level-badge">{{localize "LYRIAN.UI.LevelShort"}} {{requiredLevel}}</span>{{else}}<span class="lyr-level-badge"><i class="fa-solid fa-star"></i></span>{{/if}}
+      <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+      <button type="button" class="lyr-feature-name" data-action="{{#if usable}}useItem{{else}}editItem{{/if}}">{{item.name}}</button>
+      <em class="lyr-feature-role">{{role}}</em>
+      <button type="button" class="lyr-icon" data-action="editItem" title="{{localize "LYRIAN.Action.Open"}}"><i class="fa-solid fa-pen"></i></button>
+    </li>
+  {{/inline}}
+
+  {{#if isCharacter}}
+    <details class="lyr-feature-section lyr-fold" data-collapse-scope="abilities"
+             data-collapse-id="racial" {{{lyrianSectionOpen "abilities" "racial"}}}>
+      <summary class="lyr-feature-heading">{{localize "LYRIAN.UI.RacialTraits"}} {{#if raceSummary.primary}}<span>{{raceSummary.displayName}}{{#if raceSummary.ancestry}} · {{raceSummary.ancestry.name}}{{/if}}{{#if raceSummary.variant}} · {{raceSummary.variant.name}}{{/if}}</span>{{/if}}</summary>
+      <ul class="lyr-feature-list">
+        {{#each racialTraits}}{{> grantRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.RacialTraits"}}</li>{{/each}}
+      </ul>
+    </details>
+
+    {{#each classGroups as |group|}}
+      <details class="lyr-feature-section lyr-fold" data-collapse-scope="abilities"
+               data-collapse-id="class-{{group.item.id}}" {{{lyrianSectionOpen "abilities" (concat "class-" group.item.id)}}}>
+        <summary class="lyr-feature-heading">{{group.item.name}} <span>{{localize "LYRIAN.UI.ClassTierLevel" tier=group.item.system.tier level=group.level}}</span></summary>
+        <ul class="lyr-feature-list">
+          {{#each group.features}}{{> grantRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.ClassFeatures"}}</li>{{/each}}
+        </ul>
+      </details>
+    {{/each}}
+  {{/if}}
+
+  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="actions" {{{lyrianSectionOpen "abilities" "actions"}}}>
+    <summary class="lyr-subheading">{{#if isCharacter}}{{localize "LYRIAN.UI.OtherActions"}}{{else}}{{localize "LYRIAN.UI.Actions"}}{{/if}}</summary>
+    <ul class="lyr-list">
+      {{#each items.abilities}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.ActiveAbilities"}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="reactions" {{{lyrianSectionOpen "abilities" "reactions"}}}>
+    <summary class="lyr-subheading">{{localize "LYRIAN.UI.Reactions"}}</summary>
+    <ul class="lyr-list">
+      {{#each items.reactions}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Reactions"}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="encounter-start" {{{lyrianSectionOpen "abilities" "encounter-start"}}}>
+    <summary class="lyr-subheading">{{localize "LYRIAN.Timing.EncounterStart"}}</summary>
+    <ul class="lyr-list">
+      {{#each items.encounterStart}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.UI.None"}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="encounter-conclusion" {{{lyrianSectionOpen "abilities" "encounter-conclusion"}}}>
+    <summary class="lyr-subheading">{{localize "LYRIAN.Timing.EncounterConclusion"}}</summary>
+    <ul class="lyr-list">
+      {{#each items.encounterConclusion}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.UI.None"}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="passives" {{{lyrianSectionOpen "abilities" "passives"}}}>
+    <summary class="lyr-subheading">{{localize "LYRIAN.UI.Passives"}}</summary>
+    <ul class="lyr-list">
+      {{#each items.passives}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.UI.None"}}</li>{{/each}}
+    </ul>
+  </details>
+</section>
